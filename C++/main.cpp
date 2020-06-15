@@ -1,10 +1,15 @@
 #include <stdio.h>
-
-int main() {
-  int sum = 0;
-  for(int i=1;i<=10;i++){
-    sum = sum + i;
-    printf("%d", i);
+int main(){
+  for(int i=0;i<=5;i++){
+    for(int j=0;j<=i;j++){
+      printf("*");
+    }
+    printf("\n");
   }
-  printf("%d", sum);
+  for(int i=1;i<=5;i++){
+    for(int j=5;j>=i;j--){
+      printf("%d", j);
+    }
+    printf("\n");
+  }
 }
